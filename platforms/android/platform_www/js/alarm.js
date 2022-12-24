@@ -6,7 +6,7 @@ function startAlarm() {
 // 알람 리스트를 불러온다.
 function getAlarmList() {
 	
-	var userKey = getLocal('userKey'); // 유저키
+	const userKey = getLocal('userKey'); // 유저키
 	
 	$.ajax ({
 		type:"GET",
@@ -22,7 +22,7 @@ function getAlarmList() {
 // 알람 리스트 데이터를 HTML 코드로 만든다.
 function createAlarmListHtml(data) {
 
-	var Html = '';
+	let Html = '';
 	Html += '<ul class="ui-listview-outer" data-role="listview" class="myMoimListUl">';
 	Html += '<li class="sub-title">알림</li>';
 
